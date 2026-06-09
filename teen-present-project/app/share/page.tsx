@@ -6,7 +6,9 @@ const statusMessages: Record<string, string> = {
   sent: "Thank you. Your reflection was received and will appear only after it is approved.",
   reflection: "Please add a reflection under 700 characters.",
   image: "Please choose an image file under 8 MB.",
-  upload: "Something went wrong while sending your reflection. Please try again."
+  upload: "Something went wrong while sending your reflection. Please try again.",
+  unconfigured:
+    "Sharing is currently paused while the submission database is being connected."
 };
 
 export default function SharePage({

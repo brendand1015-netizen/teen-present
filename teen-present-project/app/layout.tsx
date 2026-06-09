@@ -1,18 +1,6 @@
 import type { Metadata } from "next";
-import { Cormorant_Garamond, Inter } from "next/font/google";
 import Link from "next/link";
 import "./globals.css";
-
-const serif = Cormorant_Garamond({
-  subsets: ["latin"],
-  variable: "--font-serif",
-  weight: ["400", "500", "600"]
-});
-
-const sans = Inter({
-  subsets: ["latin"],
-  variable: "--font-sans"
-});
 
 export const metadata: Metadata = {
   title: "Teen Present",
@@ -33,7 +21,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${serif.variable} ${sans.variable}`}>
+    <html lang="en">
       <body className="font-sans antialiased">
         <header className="mx-auto flex w-full max-w-6xl flex-col gap-5 px-6 py-7 text-sm text-ink/70 sm:flex-row sm:items-center sm:justify-between md:px-10">
           <Link

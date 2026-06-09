@@ -23,32 +23,44 @@ type Database = {
   };
 };
 
-function requireEnv(name: string) {
-  const value = process.env[name];
+function readEnv(name: string) {
+  return process.env[name]?.trim() || undefined;
+}
 
-  if (!value) {
-    throw new Error(`Missing required environment variable: ${name}`);
-  }
+export function isSupabaseConfigured() {
+  return Boolean(
+    readEnv("NEXT_PUBLIC_SUPABASE_URL") &&
+      readEnv("NEXT_PUBLIC_SUPABASE_ANON_KEY")
+  );
+}
 
-  return value;
+export function isAdminSupabaseConfigured() {
+  return Boolean(isSupabaseConfigured() && readEnv("SUPABASE_SERVICE_ROLE_KEY"));
 }
 
 export function createPublicSupabaseClient() {
-  return createClient<Database>(
-    requireEnv("NEXT_PUBLIC_SUPABASE_URL"),
-    requireEnv("NEXT_PUBLIC_SUPABASE_ANON_KEY")
-  );
+  const url = readEnv("NEXT_PUBLIC_SUPABASE_URL");
+  const anonKey = readEnv("NEXT_PUBLIC_SUPABASE_ANON_KEY");
+
+  if (!url || !anonKey) {
+    return null;
+  }
+
+  return createClient<Database>(url, anonKey);
 }
 
 export function createAdminSupabaseClient() {
-  return createClient<Database>(
-    requireEnv("NEXT_PUBLIC_SUPABASE_URL"),
-    requireEnv("SUPABASE_SERVICE_ROLE_KEY"),
-    {
-      auth: {
-        persistSession: false,
-        autoRefreshToken: false
-      }
+  const url = readEnv("NEXT_PUBLIC_SUPABASE_URL");
+  const serviceRoleKey = readEnv("SUPABASE_SERVICE_ROLE_KEY");
+
+  if (!url || !serviceRoleKey) {
+    return null;
+  }
+
+  return createClient<Database>(url, serviceRoleKey, {
+    auth: {
+      persistSession: false,
+      autoRefreshToken: false
     }
-  );
+  });
 }

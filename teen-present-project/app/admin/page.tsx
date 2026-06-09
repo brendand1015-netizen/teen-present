@@ -12,6 +12,11 @@ import { createAdminSupabaseClient } from "@/lib/supabase";
 
 async function getPendingSubmissions() {
   const supabase = createAdminSupabaseClient();
+
+  if (!supabase) {
+    return [];
+  }
+
   const { data, error } = await supabase
     .from("submissions")
     .select("*")
@@ -82,6 +87,11 @@ export default async function AdminPage({
           {searchParams.status === "update-error" ? (
             <p className="mb-8 border-l border-clay/40 py-3 pl-5 text-ink/65">
               The submission could not be updated. Please try again.
+            </p>
+          ) : null}
+          {searchParams.status === "unconfigured" ? (
+            <p className="mb-8 border-l border-clay/40 py-3 pl-5 text-ink/65">
+              Supabase is not configured yet, so moderation is paused.
             </p>
           ) : null}
           {submissions.length > 0 ? (

@@ -22,6 +22,11 @@ A calm, contemplative online photography exhibition about presence and teen well
 
 ## Supabase setup
 
+The public pages (`/`, `/exhibition`, and `/about`) can build and deploy without
+Supabase environment variables. The upload, Portledge submissions, and admin
+moderation features stay in the codebase, but they need Supabase to be configured
+before they can store or moderate visitor submissions.
+
 1. Create a Supabase project.
 2. Open the SQL editor and run `supabase/schema.sql`.
 3. In Project Settings, copy:

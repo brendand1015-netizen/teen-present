@@ -17,8 +17,8 @@ const config: Config = {
         dusk: "#6d7468"
       },
       fontFamily: {
-        serif: ["var(--font-serif)", "Georgia", "serif"],
-        sans: ["var(--font-sans)", "Inter", "system-ui", "sans-serif"]
+        serif: ["Georgia", "Cambria", "Times New Roman", "serif"],
+        sans: ["Inter", "ui-sans-serif", "system-ui", "sans-serif"]
       },
       keyframes: {
         "slow-rise": {

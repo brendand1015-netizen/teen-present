@@ -3,6 +3,11 @@ import type { SubmissionSection } from "@/lib/types";
 
 export async function getApprovedSubmissions(section?: SubmissionSection) {
   const supabase = createPublicSupabaseClient();
+
+  if (!supabase) {
+    return [];
+  }
+
   let query = supabase
     .from("submissions")
     .select("*")

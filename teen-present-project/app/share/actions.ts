@@ -28,6 +28,11 @@ export async function submitReflection(formData: FormData) {
   }
 
   const supabase = createPublicSupabaseClient();
+
+  if (!supabase) {
+    redirect("/share?status=unconfigured");
+  }
+
   const extension = image.name.split(".").pop() || "jpg";
   const fileName = `${Date.now()}-${crypto.randomUUID()}.${extension}`;
 

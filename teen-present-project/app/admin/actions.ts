@@ -33,6 +33,11 @@ async function updateSubmissionStatus(id: string, status: SubmissionStatus) {
   }
 
   const supabase = createAdminSupabaseClient();
+
+  if (!supabase) {
+    redirect("/admin?status=unconfigured");
+  }
+
   const { error } = await supabase
     .from("submissions")
     .update({ status })
