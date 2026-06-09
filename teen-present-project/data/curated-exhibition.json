@@ -1,0 +1,110 @@
+[
+  {
+    "id": "brendan",
+    "name": "Brendan",
+    "items": [
+      {
+        "id": "brendan-1",
+        "photo": "/exhibition/brendan/1.jpg",
+        "alt": "Brendan photo 1",
+        "title": "Autumn Departure",
+        "date": "October 27, 2024",
+        "reflection": "I paused on my walk home to catch sight of the empty school bus parked under a canopy of golden leaves. The late afternoon light turned the bright yellow bus and the autumn foliage into a single glowing scene. It reminded me that even the most ordinary moments—an everyday bus stop—can reveal unexpected beauty when we simply slow down and look."
+      },
+      {
+        "id": "brendan-2",
+        "photo": "/exhibition/brendan/2.jpg",
+        "alt": "Brendan photo 2",
+        "title": "Sunset Stroll",
+        "date": "November 3, 2024",
+        "reflection": "As the sun dipped below the horizon, I caught this moment of my younger brother exploring the dock. The golden light and his quiet curiosity made the scene feel timeless. It’s a reminder of how joy can come from simply watching someone you love grow, move, and discover the world around them."
+      },
+      {
+        "id": "brendan-3",
+        "photo": "/exhibition/brendan/3.jpg",
+        "alt": "Brendan photo 3",
+        "title": "Eagle’s Ascent",
+        "date": "April 2, 2025",
+        "reflection": "By tilting the lens skyward, I transformed a campus building into a study of light, form, and flight. The golden eagle statue against the deep blue sky became a symbol of ambition, while the sun’s flare through the tower’s spire highlighted hidden details of the stonework. This shift in angle reminded me how a small change in viewpoint can uncover new meaning in what we think we already know."
+      },
+      {
+        "id": "brendan-4",
+        "photo": "/exhibition/brendan/4.jpg",
+        "alt": "Brendan photo 4",
+        "title": "Echoes of Play",
+        "date": "November 24, 2024",
+        "reflection": "Standing before these empty bleachers and the lone goalpost at sunset, I’m reminded of all the laughter, teamwork, and friendly rivalry that animate this field. Even now, the fading light seems to hold the echo of cheers and shared moments—reminding me that places become meaningful through the people who gather there and the connections we build."
+      },
+      {
+        "id": "brendan-5",
+        "photo": "/exhibition/brendan/5.jpg",
+        "alt": "Brendan photo 5",
+        "title": "Ducks of Dusk",
+        "date": "October 12, 2024",
+        "reflection": "As the sun dipped below the horizon, the gentle waves and anchored boats glowed with golden light. Capturing this moment reminded me to pause and appreciate how even ordinary scenes—empty docks and still waters—can become magical when bathed in sunset."
+      },
+      {
+        "id": "brendan-6",
+        "photo": "/exhibition/brendan/6.jpg",
+        "alt": "Brendan photo 6",
+        "title": "Easter Clay Creation",
+        "date": "April 20, 2025",
+        "reflection": "This photo was taken during an Easter-themed clay workshop with special needs children. The moment captured here shows a volunteer guiding two young kids as they shape bright clay into animals. There was laughter, quiet focus, and a feeling of warmth throughout. This scene reminded me that happiness often comes from simple, shared moments—and that inclusion can be as easy as sitting together and creating side by side."
+      }
+    ]
+  },
+  {
+    "id": "bo",
+    "name": "Bo",
+    "items": [
+      {
+        "id": "bo-1",
+        "photo": "/exhibition/bo/1.jpg",
+        "alt": "Bo photo 1",
+        "title": "A Moment of Reflection",
+        "date": "April 16, 2026",
+        "reflection": "A quiet moment captured by the shore, where the calm sea and distant horizon create a peaceful atmosphere. The image reflects how even ordinary conversations can become meaningful when accompanied by nature's tranquility."
+      },
+      {
+        "id": "bo-2",
+        "photo": "/exhibition/bo/2.jpg",
+        "alt": "Bo photo 2",
+        "title": "Lucas",
+        "date": "May 21, 2026",
+        "reflection": "With warm lighting and a close-up perspective, this portrait highlights Lucas's curious expression and gentle personality. The photograph captures the comfort and companionship that pets bring into everyday life."
+      },
+      {
+        "id": "bo-3",
+        "photo": "/exhibition/bo/3.jpg",
+        "alt": "Bo photo 3",
+        "title": "Evening Lights",
+        "date": "April 11, 2026",
+        "reflection": "Taken after sunset, this image showcases the striking architecture and glowing reflections that transform the city at night. The contrast between light and darkness creates a sense of elegance and wonder."
+      },
+      {
+        "id": "bo-4",
+        "photo": "/exhibition/bo/4.jpg",
+        "alt": "Bo photo 4",
+        "title": "Golden Hour",
+        "date": "May 28, 2026",
+        "reflection": "Captured during the evening of senior prom, this photograph uses sunlight filtering through the branches to create a peaceful and memorable scene. The image represents growth, change, and the closing chapter of high school."
+      },
+      {
+        "id": "bo-5",
+        "photo": "/exhibition/bo/5.jpg",
+        "alt": "Bo photo 5",
+        "title": "Conversations Between Mentors",
+        "date": "May 28, 2026",
+        "reflection": "Taken during senior prom, this candid moment captures three teachers sharing a conversation outside the venue. Their presence reflects the guidance and support educators provide throughout the high school experience, making the occasion even more meaningful."
+      },
+      {
+        "id": "bo-6",
+        "photo": "/exhibition/bo/6.jpg",
+        "alt": "Bo photo 6",
+        "title": "Bear Bakery",
+        "date": "December 21, 2026",
+        "reflection": "Located in Seoul's Seongsu district, this charming bakery combines creativity with warm, rustic design. The playful bear-shaped bread and carefully arranged displays create an inviting atmosphere that reflects the unique character of the neighborhood."
+      }
+    ]
+  }
+]
